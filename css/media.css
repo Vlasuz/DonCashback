@@ -215,11 +215,14 @@
     display: none
   }
   .page-advertising__sides {
-    display: block
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse
   }
   .page-advertising .block-shadow.page-advertising__lft {
     margin: 0;
-    margin-bottom: 20px
+    margin-top: 20px
   }
   .page-profile__center {
     margin: 0
@@ -327,6 +330,22 @@
   }
   .page-deal__top ol li.li_show.li_current:after {
     display: block
+  }
+  .page-deal__top ol li.li_show.li_done.li_current:after {
+    display: none
+  }
+  .page-deal__top ol li.li_show.li_done.li_current .num:after {
+    background: #21b396
+  }
+  .pages-seller__top .select-v2 {
+    margin-right: 0
+  }
+  .popup-required label b {
+    text-align: left;
+    white-space: nowrap
+  }
+  .popup-required label .span_green {
+    text-align: right
   }
   .page-deal__top li.li_current .num:after {
     background: #495fea
@@ -1039,6 +1058,9 @@
   .card img {
     width: 10px
   }
+  .card a img {
+    width: 100%
+  }
   .card {
     padding: 13px 10px
   }
@@ -1229,6 +1251,29 @@
 @media screen and (max-width:576px) {
   .popups .btn {
     margin: 10px 0
+  }
+  .page-products-change .label p,
+  .page-products-change label p {
+    display: block
+  }
+  .popup-cashback-back__input input {
+    height: 50px;
+    padding-bottom: 20px
+  }
+  .popup-cashback-back__input span {
+    top: auto;
+    bottom: 0
+  }
+  .popup-cashback-back__input p {
+    top: 5px;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0)
+  }
+  .popup-cashback-back__input {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
   }
   .instr .widget,
   .instr .widget iframe {
@@ -1827,7 +1872,7 @@
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-    background: url(../img/img/footer-arr.img) no-repeat;
+    background: url(../img/svg/footer-arr.svg) no-repeat;
     background-size: contain;
     width: 18px;
     height: 18px;

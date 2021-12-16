@@ -43,7 +43,15 @@ block content
 								p
 									b *
 									span Категория
-								input(placeholder="Общий вопрос" required type="text")
+								.select
+									.select__head
+										span Категория
+									.select__body
+										span Категория
+										span Общий вопрос
+										span Финансовый вопрос
+										span Жалоба
+										span Технический вопрос
 							label.label-comment
 								p
 									b 
@@ -64,7 +72,13 @@ block content
 								p
 									b *
 									span Приоритет 
-								input(placeholder="Тема сообщения" required type="text")
+								.select
+									.select__head
+										span Низкий
+									.select__body
+										span Низкий
+										span Нормальный
+										span Высокий
 							label
 								p
 									b *

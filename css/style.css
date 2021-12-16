@@ -2189,6 +2189,33 @@ table thead td {
   width: 72px;
   height: 72px
 }
+.page-notice table tbody tr td:nth-child(2) .td__photo:hover .photo-name {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease
+}
+.page-notice table tbody tr td:nth-child(2) .td__photo .photo-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  position: absolute;
+  padding: 8px;
+  background: rgba(34,34,32,.7);
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: -1;
+  color: #fff
+}
 .page-notice table tbody tr td:nth-child(2) .td__photo img {
   width: 100%;
   height: 100%;
@@ -2601,6 +2628,33 @@ table thead td {
   margin-right: 7px;
   width: 102px
 }
+.page-orders table tbody td:nth-child(2) .td__photo:hover .photo-name {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease
+}
+.page-orders table tbody td:nth-child(2) .td__photo .photo-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  position: absolute;
+  padding: 8px;
+  background: rgba(34,34,32,.7);
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: -1;
+  color: #fff
+}
 .page-orders table tbody td:nth-child(2) .td__photo img {
   width: 100%;
   height: 100%;
@@ -2905,6 +2959,33 @@ table thead td {
   max-width: 82px;
   height: 82px;
   width: 100%
+}
+.page-notice1 tbody td:nth-child(2) .td__block .td__photo:hover .photo-name {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease
+}
+.page-notice1 tbody td:nth-child(2) .td__block .td__photo .photo-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  position: absolute;
+  padding: 8px;
+  background: rgba(34,34,32,.7);
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: -1;
+  color: #fff
 }
 .page-notice1 tbody td:nth-child(2) .td__block .td__photo img {
   width: 100%;
@@ -4441,7 +4522,7 @@ textarea {
 .page-contact section {
   margin: 33px 0
 }
-.page-contact h2 {
+.page-contact .wrapper h2 {
   font-weight: 900;
   font-size: 30px;
   line-height: 35px;
@@ -4815,11 +4896,20 @@ textarea {
   -o-transition: all .15s ease;
   transition: all .15s ease
 }
+.page-blog__item .item__like img:nth-child(1) {
+  display: block
+}
+.page-blog__item .item__like img:nth-child(2) {
+  display: none
+}
 .page-blog__item .item__like_liked {
   border: 1px solid #b8c0ee
 }
-.page-blog__item .item__like_liked path {
-  fill: #495fea
+.page-blog__item .item__like_liked img:nth-child(1) {
+  display: none
+}
+.page-blog__item .item__like_liked img:nth-child(2) {
+  display: block
 }
 .page-blog__item .item__like:active {
   -webkit-transform: scale(.95);
@@ -5190,11 +5280,23 @@ textarea {
   -o-transition: all .15s ease;
   transition: all .15s ease
 }
+.page-single .single__content .single-video .item__like img {
+  margin: 0
+}
+.page-single .single__content .single-video .item__like img:nth-child(1) {
+  display: block
+}
+.page-single .single__content .single-video .item__like img:nth-child(2) {
+  display: none
+}
 .page-single .single__content .single-video .item__like_liked {
   border: 1px solid #b8c0ee
 }
-.page-single .single__content .single-video .item__like_liked path {
-  fill: #495fea
+.page-single .single__content .single-video .item__like_liked img:nth-child(1) {
+  display: none
+}
+.page-single .single__content .single-video .item__like_liked img:nth-child(2) {
+  display: block
 }
 .page-single .single__content .single-video .item__like:active {
   -webkit-transform: scale(.95);
@@ -5349,7 +5451,7 @@ textarea {
   border: none;
   cursor: pointer
 }
-.page-single .comments__item .item__dislike {
+.page-single .comments__item .item__dislike-f {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5357,13 +5459,22 @@ textarea {
   -ms-flex-align: center;
   align-items: center
 }
-.page-single .comments__item .item__dislike.likes_active path {
-  fill: #ed0006
+.page-single .comments__item .item__dislike-f .full {
+  display: none
 }
-.page-single .comments__item .item__dislike span {
+.page-single .comments__item .item__dislike-f .empty {
+  display: block
+}
+.page-single .comments__item .item__dislike-f.likes_active .full {
+  display: block
+}
+.page-single .comments__item .item__dislike-f.likes_active .empty {
+  display: none
+}
+.page-single .comments__item .item__dislike-f span {
   color: #ed0006
 }
-.page-single .comments__item .item__like {
+.page-single .comments__item .item__like-f {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5373,10 +5484,19 @@ textarea {
   margin-right: 15px;
   cursor: pointer
 }
-.page-single .comments__item .item__like.likes_active path {
-  fill: #4cb70a
+.page-single .comments__item .item__like-f .full {
+  display: none
 }
-.page-single .comments__item .item__like span {
+.page-single .comments__item .item__like-f .empty {
+  display: block
+}
+.page-single .comments__item .item__like-f.likes_active .full {
+  display: block
+}
+.page-single .comments__item .item__like-f.likes_active .empty {
+  display: none
+}
+.page-single .comments__item .item__like-f span {
   color: #4cb70a
 }
 .page-single .comments__item .item__likes {
@@ -6042,8 +6162,17 @@ textarea {
   position: relative;
   cursor: pointer
 }
-.page-card-single__item .item__likes_active path {
-  fill: #495fea
+.page-card-single__item .item__likes .empty {
+  display: block
+}
+.page-card-single__item .item__likes .full {
+  display: none
+}
+.page-card-single__item .item__likes_active .empty {
+  display: none
+}
+.page-card-single__item .item__likes_active .full {
+  display: block
 }
 .page-card-single__item .item__likes .count {
   position: absolute;
@@ -6489,6 +6618,9 @@ textarea {
   padding: 10px;
   min-height: 80px
 }
+.page-deal__textarea img {
+  margin: 0!important
+}
 .page-deal__textarea input {
   display: none
 }
@@ -6556,8 +6688,8 @@ textarea {
   transition: all .3s ease
 }
 .page-deal__textarea button:hover {
-  -webkit-filter: brightness(.9);
-  filter: brightness(.9)
+  -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,.6);
+  box-shadow: 0 0 3px 0 rgba(0,0,0,.6)
 }
 .page-deal__textarea textarea {
   position: absolute;
@@ -6801,25 +6933,45 @@ textarea {
 .page-deal .popup .stars label {
   margin-bottom: 0
 }
+.page-deal .popup .stars label .grey-s {
+  display: block
+}
+.page-deal .popup .stars label .gold-s {
+  display: none
+}
 .page-deal .popup .stars:not(:checked) > input {
   display: none
 }
 .page-deal .popup .stars:not(:checked) > label {
   cursor: pointer
 }
-.page-deal .popup .stars > input:checked ~ label path {
-  fill: #fdd237
+.page-deal .popup .stars > input:checked ~ label .grey-s {
+  display: none
 }
-.page-deal .popup .stars:not(:checked) > label:hover path,
-.page-deal .popup .stars:not(:checked) > label:hover ~ label path {
-  fill: #fdd237
+.page-deal .popup .stars > input:checked ~ label .gold-s {
+  display: block
 }
-.page-deal .popup .stars > input:checked + label:hover path,
-.page-deal .popup .stars > input:checked + label:hover ~ label path,
-.page-deal .popup .stars > input:checked ~ label:hover path,
-.page-deal .popup .stars > input:checked ~ label:hover ~ label path,
-.page-deal .popup .stars > label:hover ~ input:checked ~ label path {
-  fill: #fdd237
+.page-deal .popup .stars:not(:checked) > label:hover .grey-s,
+.page-deal .popup .stars:not(:checked) > label:hover ~ label .grey-s {
+  display: none
+}
+.page-deal .popup .stars:not(:checked) > label:hover .gold-s,
+.page-deal .popup .stars:not(:checked) > label:hover ~ label .gold-s {
+  display: block
+}
+.page-deal .popup .stars > input:checked + label:hover .grey-s,
+.page-deal .popup .stars > input:checked + label:hover ~ label .grey-s,
+.page-deal .popup .stars > input:checked ~ label:hover .grey-s,
+.page-deal .popup .stars > input:checked ~ label:hover ~ label .grey-s,
+.page-deal .popup .stars > label:hover ~ input:checked ~ label .grey-s {
+  display: none
+}
+.page-deal .popup .stars > input:checked + label:hover .gold-s,
+.page-deal .popup .stars > input:checked + label:hover ~ label .gold-s,
+.page-deal .popup .stars > input:checked ~ label:hover .gold-s,
+.page-deal .popup .stars > input:checked ~ label:hover ~ label .gold-s,
+.page-deal .popup .stars > label:hover ~ input:checked ~ label .gold-s {
+  display: block
 }
 .page-deal .popup h3 {
   font-weight: 500;
@@ -7302,7 +7454,35 @@ textarea {
 .page-requests .td__photo {
   width: 73px;
   height: 73px;
-  margin-right: 7px
+  margin-right: 7px;
+  position: relative
+}
+.page-requests .td__photo:hover .photo-name {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease
+}
+.page-requests .td__photo .photo-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  position: absolute;
+  padding: 8px;
+  background: rgba(34,34,32,.7);
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: -1;
+  color: #fff
 }
 .page-requests .td__photo img {
   border-radius: 3px;
@@ -7990,6 +8170,33 @@ textarea {
   width: 72px;
   height: 72px
 }
+.page-orders-seller .td__photo:hover .photo-name {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease
+}
+.page-orders-seller .td__photo .photo-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  position: absolute;
+  padding: 8px;
+  background: rgba(34,34,32,.7);
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: -1;
+  color: #fff
+}
 .page-orders-seller .td__photo img {
   width: 100%;
   height: 100%;
@@ -8113,6 +8320,33 @@ textarea {
   min-width: 72px;
   width: 72px;
   height: 72px
+}
+.page-notification table .td__photo:hover .photo-name {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease
+}
+.page-notification table .td__photo .photo-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  position: absolute;
+  padding: 8px;
+  background: rgba(34,34,32,.7);
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: -1;
+  color: #fff
 }
 .page-notification table .td__photo img {
   width: 100%;
@@ -8949,8 +9183,7 @@ textarea {
 }
 .page-plans__item .item__price .price_green span {
   color: #21b396;
-  font-size: 22px;
-  line-height: 26px
+  font-size: 22px
 }
 .page-plans__item .item__price .price_green strike {
   color: #a1a1A1FF
@@ -9051,6 +9284,37 @@ textarea {
   color: #495fea;
   border: none
 }
+.page-advertising .td__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 -11px
+}
+.page-advertising .td__count .count__sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 11px;
+  cursor: pointer;
+  width: 16px;
+  height: 20px
+}
+.page-advertising .td__count input {
+  max-width: 60px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px
+}
+.page-advertising .td__count input::-webkit-inner-spin-button,
+.page-advertising .td__count input::-webkit-outer-spin-button {
+  -webkit-appearance: none
+}
 .page-advertising__slots button {
   border: 1px solid #495fea;
   border-radius: 5px;
@@ -9123,37 +9387,6 @@ textarea {
 .page-advertising__slots table thead td {
   padding-top: 8px;
   padding-bottom: 8px
-}
-.page-advertising__slots .td__count {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0 -11px
-}
-.page-advertising__slots .td__count .count__sign {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0 11px;
-  cursor: pointer;
-  width: 16px;
-  height: 20px
-}
-.page-advertising__slots .td__count input {
-  max-width: 60px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 16px
-}
-.page-advertising__slots .td__count input::-webkit-inner-spin-button,
-.page-advertising__slots .td__count input::-webkit-outer-spin-button {
-  -webkit-appearance: none
 }
 .page-advertising__slots tfoot p {
   text-align: left
@@ -9674,6 +9907,14 @@ textarea {
 .instr__sides .lft {
   margin-right: 20px
 }
+.popup__status-svg {
+  text-align: center;
+  margin: 24px 0
+}
+.popup__status-svg img {
+  display: block;
+  margin: 0 auto
+}
 @media screen and (max-width:1440px) {
   .header__menu {
     display: none
@@ -9891,11 +10132,14 @@ textarea {
     display: none
   }
   .page-advertising__sides {
-    display: block
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse
   }
   .page-advertising .block-shadow.page-advertising__lft {
     margin: 0;
-    margin-bottom: 20px
+    margin-top: 20px
   }
   .page-profile__center {
     margin: 0
@@ -10003,6 +10247,22 @@ textarea {
   }
   .page-deal__top ol li.li_show.li_current:after {
     display: block
+  }
+  .page-deal__top ol li.li_show.li_done.li_current:after {
+    display: none
+  }
+  .page-deal__top ol li.li_show.li_done.li_current .num:after {
+    background: #21b396
+  }
+  .pages-seller__top .select-v2 {
+    margin-right: 0
+  }
+  .popup-required label b {
+    text-align: left;
+    white-space: nowrap
+  }
+  .popup-required label .span_green {
+    text-align: right
   }
   .page-deal__top li.li_current .num:after {
     background: #495fea
@@ -10715,6 +10975,9 @@ textarea {
   .card img {
     width: 10px
   }
+  .card a img {
+    width: 100%
+  }
   .card {
     padding: 13px 10px
   }
@@ -10905,6 +11168,29 @@ textarea {
 @media screen and (max-width:576px) {
   .popups .btn {
     margin: 10px 0
+  }
+  .page-products-change .label p,
+  .page-products-change label p {
+    display: block
+  }
+  .popup-cashback-back__input input {
+    height: 50px;
+    padding-bottom: 20px
+  }
+  .popup-cashback-back__input span {
+    top: auto;
+    bottom: 0
+  }
+  .popup-cashback-back__input p {
+    top: 5px;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0)
+  }
+  .popup-cashback-back__input {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
   }
   .instr .widget,
   .instr .widget iframe {
@@ -11503,7 +11789,7 @@ textarea {
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-    background: url(../img/img/footer-arr.img) no-repeat;
+    background: url(../img/svg/footer-arr.svg) no-repeat;
     background-size: contain;
     width: 18px;
     height: 18px;

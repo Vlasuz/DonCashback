@@ -22,6 +22,8 @@ $(document).ready(function () {
 
 	$('.likes-item').click(function () {
 		$(this).parent().find('.likes-item').removeClass('likes_active')
+		if( $(this).hasClass('likes_active') )
+			$(this).removeClass('likes_active')
 		$(this).toggleClass('likes_active')
 	})
 
@@ -317,14 +319,15 @@ $(document).ready(function () {
 	function selectFunc(){
 
 		$('.select__head, .select-share__head').click(function () {
-			if( $('.select-share').hasClass('select-share_active') ){
+			if( $(this).parent().hasClass('select-share_active') || $(this).parent().hasClass('select_active') ){
 				$(this).parent().find('.select__body, .select-share__body').slideUp(200)
 				$(this).parent().removeClass('select_active select-share_active')
 			}else{
+				$('.select__head, .select-share__head').parent().find('.select__body, .select-share__body').slideUp(200)
+				$('.select__head, .select-share__head').parent().removeClass('select_active select-share_active')
 				$(this).parent().find('.select__body, .select-share__body').slideDown(200)
 				$(this).parent().addClass('select_active select-share_active')
 			}
-
 		})
 
 		$('.select__body span').click(function () {
@@ -349,10 +352,12 @@ $(document).ready(function () {
 
 			$('.emoji-block').slideUp()
 
-			var div = $(".select-share"); // тут указываем ID элемента
+			var div = $(".select-share, .select, .select-v2"); // тут указываем ID элемента
 			if (!div.is(e.target) // если клик был не по нашему блоку
 			    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-				$('.select, .select-share').removeClass('select_active select-share_active')
+				$('.select-v2').removeClass('select_active')
+				$('.select').removeClass('select_active')
+				$('.select-share').removeClass('select-share_active')
 				$('.select__body, .select-share__body').slideUp(200)
 			}
 		});

@@ -216,11 +216,12 @@
 		display: none;
 	}
 	.page-advertising__sides{
-		display: block;
+		flex-direction: column-reverse;
 	}
+
 	.page-advertising .block-shadow.page-advertising__lft{
 		margin: 0;
-		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 	.page-profile__center{
 		margin: 0;
@@ -320,7 +321,25 @@
 					display: block;
 				}
 			}
+			&.li_show.li_done.li_current{
+				&:after{
+					display: none;
+				}
+				.num:after{
+					background: #21b396;
+				}
+			}
 		}
+	}
+	.pages-seller__top .select-v2{
+		margin-right: 0;
+	}
+	.popup-required label b{
+		text-align: left;
+		white-space: nowrap;
+	}
+	.popup-required label .span_green{
+		text-align: right;
 	}
 	.page-deal__top li.li_current .num:after{
 		background: #495FEA;
@@ -986,6 +1005,9 @@
 	.card img{
 		width: 10px;
 	}
+	.card a img{
+		width: 100%;
+	}
 	.card{
 		padding: 13px 10px;
 	}
@@ -1175,6 +1197,27 @@
 @media screen and (max-width: 576px) {
 	.popups .btn{
 		margin: 10px 0;
+	}
+
+	.page-products-change .label p, .page-products-change label p{
+		display: block;
+	}
+
+	.popup-cashback-back__input input{
+		height: 50px;
+		padding-bottom: 20px;
+	}
+	.popup-cashback-back__input span{
+		top: auto;
+		bottom: 0px;
+	}
+	.popup-cashback-back__input p{
+		top: 5px;
+		transform: translate(0);
+	}
+	.popup-cashback-back__input{
+		align-items: flex-start;
+
 	}
 
 	.instr .widget,
@@ -1724,7 +1767,7 @@
 			&:after{
 				content: '';
 				transition: all .3s ease;
-				background: url('../img/img/footer-arr.img') no-repeat;
+				background: url('../img/svg/footer-arr.svg') no-repeat;
 				background-size: contain;
 				width: 18px;
 				height: 18px;
@@ -1750,6 +1793,7 @@
 		text-align: left;
 	}
 }
+
 
 
 
