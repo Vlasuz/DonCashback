@@ -405,7 +405,7 @@ ul{
 			align-items: center;
 			justify-content: space-between;
 		}
-		svg{
+		img{
 			margin-right: 10px;
 		}
 		a{
@@ -563,7 +563,7 @@ ul{
 
 	.popup{
 		.page-card-single__item .item__share{
-			svg{
+			img{
 				width: 34px;
 			}
 		}
@@ -767,7 +767,7 @@ ul{
 			&_plus{
 				color: #21B396;
 			}
-			svg{
+			img{
 				margin-right: 5px;
 			}
 		}
@@ -1031,7 +1031,7 @@ footer{
 			line-height: 140%;
 			color: #000000;
 		}
-		svg{
+		img{
 			margin-right: 15px;
 		}
 	}
@@ -1248,7 +1248,7 @@ footer{
 			margin-right: 8px;
 		}
 	}
-	&__status-svg{
+	&__status-img{
 		display: block;
 		margin: 24px 0;
 		text-align: center;
@@ -4085,7 +4085,7 @@ input{
 			padding: 16px 0;
 			display: block;
 		}
-		svg{
+		img{
 			display: block;
 			margin: 0 auto;
 		}
@@ -4527,7 +4527,7 @@ input{
 				right: 20px;
 				display: flex;
 				align-items: center;
-				svg{
+				img{
 					margin-left: 15px;
 				}
 			}
@@ -4965,7 +4965,7 @@ input{
 				display: flex;
 				align-items: center;
 				position: relative;
-				svg:hover + .smile__block{
+				img:hover + .smile__block{
 					opacity: 1;
 					z-index: 1;
 					transition: opacity .3s ease;
@@ -5239,7 +5239,7 @@ input{
 			align-items: center;
 			margin-left: auto;
 			margin-bottom: 5px;
-			svg{
+			img{
 				width: 24px;
 				height: 24px;
 			}
@@ -5334,7 +5334,7 @@ input{
 				line-height: 14px;
 				color: #222220;
 			}
-			svg{
+			img{
 				padding: 3px;
 				width: 45px;
 				height: 45px;
@@ -6032,7 +6032,7 @@ input{
 			height: 92px;
 			border-radius: 8px;
 		}
-		svg{
+		img{
 			display: block;
 			margin: 0 auto;
 			text-align: center;
@@ -6097,7 +6097,7 @@ input{
 			cursor: pointer;
 			padding: 15px;
 			margin-bottom: 0;
-			svg{
+			img{
 				margin: 12px auto;
 			}
 			p{
@@ -6109,7 +6109,7 @@ input{
 		}
 		&-info-product{
 			&-next{
-				svg{
+				img{
 					display: block;
 					margin: 0 auto;
 					margin-bottom: 24px;
@@ -7839,7 +7839,7 @@ input{
 			top: 0;
 			left: 0;
 		}
-		svg{
+		img{
 			margin-right: 7px;
 		}
 		h3{

@@ -608,7 +608,7 @@ ul {
   -ms-flex-pack: justify;
   justify-content: space-between
 }
-.header__bottom svg {
+.header__bottom img {
   margin-right: 10px
 }
 .header__bottom a {
@@ -767,7 +767,7 @@ ul {
   width: 100%;
   position: relative
 }
-.card .popup .page-card-single__item .item__share svg {
+.card .popup .page-card-single__item .item__share img {
   width: 34px
 }
 .card .popup .page-card-single__item .item__description p {
@@ -998,7 +998,7 @@ ul {
 .card__top .top__sale_plus {
   color: #21b396
 }
-.card__top .top__sale svg {
+.card__top .top__sale img {
   margin-right: 5px
 }
 .card_1 .price__share {
@@ -1297,7 +1297,7 @@ footer {
   line-height: 140%;
   color: #000
 }
-.footer__email svg {
+.footer__email img {
   margin-right: 15px
 }
 .footer__block-1 {
@@ -1525,7 +1525,7 @@ footer {
   color: #767998;
   margin-right: 8px
 }
-.popup__status-svg {
+.popup__status-img {
   display: block;
   margin: 24px 0;
   text-align: center
@@ -4610,7 +4610,7 @@ textarea {
   padding: 16px 0;
   display: block
 }
-.page-contact .label-file svg {
+.page-contact .label-file img {
   display: block;
   margin: 0 auto
 }
@@ -5107,7 +5107,7 @@ textarea {
   -ms-flex-align: center;
   align-items: center
 }
-.page-single .single__comments .comment__textarea .icons svg {
+.page-single .single__comments .comment__textarea .icons img {
   margin-left: 15px
 }
 .page-single .single__comments .comment__textarea textarea {
@@ -5610,7 +5610,7 @@ textarea {
   align-items: center;
   position: relative
 }
-.page-my-profile__item .item__scores .scores__bottom svg:hover + .smile__block {
+.page-my-profile__item .item__scores .scores__bottom img:hover + .smile__block {
   opacity: 1;
   z-index: 1;
   -webkit-transition: opacity .3s ease;
@@ -5937,7 +5937,7 @@ textarea {
   margin-left: auto;
   margin-bottom: 5px
 }
-.page-card-single__item .price__lost svg {
+.page-card-single__item .price__lost img {
   width: 24px;
   height: 24px
 }
@@ -6054,7 +6054,7 @@ textarea {
   line-height: 14px;
   color: #222220
 }
-.page-card-single__item .item__likes svg {
+.page-card-single__item .item__likes img {
   padding: 3px;
   width: 45px;
   height: 45px
@@ -6836,7 +6836,7 @@ textarea {
   height: 92px;
   border-radius: 8px
 }
-.page-deal .popup svg {
+.page-deal .popup img {
   display: block;
   margin: 0 auto;
   text-align: center
@@ -6900,7 +6900,7 @@ textarea {
   padding: 15px;
   margin-bottom: 0
 }
-.page-deal .popup label.file-popup svg {
+.page-deal .popup label.file-popup img {
   margin: 12px auto
 }
 .page-deal .popup label.file-popup p {
@@ -6909,7 +6909,7 @@ textarea {
   text-align: center;
   color: #b1b1b1
 }
-.page-deal .popup-info-product-next svg {
+.page-deal .popup-info-product-next img {
   display: block;
   margin: 0 auto;
   margin-bottom: 24px
@@ -8783,7 +8783,7 @@ textarea {
   top: 0;
   left: 0
 }
-.page-plans__item svg {
+.page-plans__item img {
   margin-right: 7px
 }
 .page-plans__item h3 {
@@ -10693,7 +10693,7 @@ textarea {
     font-size: 14px;
     line-height: 16px
   }
-  .header__search button svg {
+  .header__search button img {
     display: block;
     width: 15px;
     height: 15px
@@ -10712,7 +10712,7 @@ textarea {
     line-height: 23px;
     margin-right: 10px
   }
-  .card svg {
+  .card img {
     width: 10px
   }
   .card {
@@ -11161,10 +11161,10 @@ textarea {
     -ms-flex-align: end;
     align-items: flex-end
   }
-  .mini-info__block svg:first-child {
+  .mini-info__block img:first-child {
     width: 50px
   }
-  .mini-info__block svg:last-child {
+  .mini-info__block img:last-child {
     width: 20px;
     padding-bottom: 10px
   }
@@ -11245,7 +11245,7 @@ textarea {
     line-height: 140%;
     padding: 5px 18px
   }
-  .page-blog__item .item__bottom svg {
+  .page-blog__item .item__bottom img {
     width: 17px
   }
   .page-blog__content_tile .page-blog__item .item__viewers {
@@ -11503,7 +11503,7 @@ textarea {
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-    background: url(../img/svg/footer-arr.svg) no-repeat;
+    background: url(../img/img/footer-arr.img) no-repeat;
     background-size: contain;
     width: 18px;
     height: 18px;

@@ -643,12 +643,12 @@
 	.block__nav ul{
 		margin: 0;
 	}
-	// .page-deal__textarea svg{
+	// .page-deal__textarea img{
 	// 	// display: none;
 	// }
 	// .page-deal__textarea .btn-mob{
 	// 	// display: block;
-	// 	svg{
+	// 	img{
 	// 		// display: block;
 	// 	}
 	// }
@@ -960,7 +960,7 @@
 		}
 	}
 	.header__search button{
-		svg{
+		img{
 			display: block;
 			width: 15px;
 			height: 15px;
@@ -983,7 +983,7 @@
 		margin-right: 10px;
 	}
 
-	.card svg{
+	.card img{
 		width: 10px;
 	}
 	.card{
@@ -1407,7 +1407,7 @@
 			display: flex;
 			align-items: flex-end;
 		}
-		svg{
+		img{
 			&:first-child{
 				width: 50px;
 			}
@@ -1496,7 +1496,7 @@
 		line-height: 140%;
 		padding: 5px 18px;
 	}
-	.page-blog__item .item__bottom svg{
+	.page-blog__item .item__bottom img{
 		width: 17px;
 	}
 	.page-blog__content_tile .page-blog__item .item__viewers{
@@ -1724,7 +1724,7 @@
 			&:after{
 				content: '';
 				transition: all .3s ease;
-				background: url('../img/svg/footer-arr.svg') no-repeat;
+				background: url('../img/img/footer-arr.img') no-repeat;
 				background-size: contain;
 				width: 18px;
 				height: 18px;
