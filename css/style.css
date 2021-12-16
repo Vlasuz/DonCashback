@@ -10175,7 +10175,7 @@ textarea {
   .header__exit {
     display: none
   }
-  .header__bell svg {
+  .header__bell img {
     width: 30px;
     height: 30px;
     display: block
