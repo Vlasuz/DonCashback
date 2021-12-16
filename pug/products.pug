@@ -1,0 +1,705 @@
+extends includes/header-singin-seller.pug
+
+block content
+
+	main.page-products.pages-seller
+		.popup.popup-stop-company
+			.popup__bgd
+			.popup__content
+				.popup__close
+					<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.292943 18.9374C-0.0976475 19.3279 -0.0976475 19.9609 0.292943 20.3514C0.683533 20.7419 1.3168 20.7419 1.70739 20.3514L9.8216 12.2399L17.9387 20.3607C18.3291 20.7513 18.9621 20.7513 19.3525 20.3607C19.743 19.9701 19.743 19.3368 19.3525 18.9462L11.2361 10.8259L19.3599 2.70487C19.7505 2.31441 19.7505 1.68135 19.3599 1.29089C18.9693 0.900432 18.336 0.900432 17.9454 1.29089L9.82217 9.4114L1.70711 1.29261C1.31668 0.901994 0.683659 0.901994 0.293224 1.29261C-0.0972099 1.68322 -0.0972099 2.31653 0.293224 2.70715L8.40771 10.8254L0.292943 18.9374Z" fill="#B1B1B1"/></svg>
+				h2 Остановка кампании
+				.popup__status-svg
+					<svg width="56" height="49" viewBox="0 0 56 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26.5856 0.809131C26.3088 0.885476 25.8243 1.08841 25.5089 1.2601C24.4382 1.84289 23.9092 2.53698 21.5614 6.4395C17.53 13.1404 16.1628 15.4099 12.9418 20.7473C11.1836 23.6607 9.31809 26.7571 8.79635 27.6281C8.2745 28.4991 6.20064 31.9409 4.18772 35.2765C2.1747 38.6122 0.412659 41.6348 0.271875 41.9935C-0.0616815 42.8438 -0.0935736 44.4269 0.20536 45.2958C0.666594 46.6361 1.83688 47.85 3.19786 48.3996L3.82511 48.6528H27.908H51.9909L52.6204 48.3987C53.9122 47.8772 55.0565 46.7286 55.551 45.4571C55.744 44.9611 55.7957 44.602 55.7986 43.738C55.803 42.403 55.6286 41.9012 54.5268 40.0791C54.109 39.3883 52.8941 37.3732 51.8272 35.6011C50.7602 33.829 48.7447 30.4869 47.3484 28.1742C45.9522 25.8615 43.9375 22.5193 42.8714 20.7473C41.8053 18.9752 39.6428 15.3873 38.0656 12.7742C36.4886 10.1612 34.4795 6.82614 33.6011 5.36304C31.8956 2.52278 31.3279 1.8157 30.3069 1.25999C29.221 0.669003 27.7432 0.489992 26.5856 0.809131ZM28.4246 4.42342C28.651 4.51604 28.9138 4.70029 29.0085 4.833C29.1031 4.9657 30.4507 7.18766 32.0032 9.7707C33.5557 12.3537 35.3654 15.3518 36.0247 16.4331C36.684 17.5144 37.5286 18.9151 37.9015 19.5458C38.2744 20.1766 39.5757 22.3391 40.7934 24.3515C42.011 26.3639 44.0272 29.706 45.2737 31.7784C46.5202 33.8509 48.5594 37.2359 49.8053 39.3008C51.0512 41.3657 52.1172 43.2237 52.1741 43.4298C52.3038 43.8998 51.9723 44.6609 51.5364 44.8942C51.1028 45.1262 4.71318 45.1262 4.27957 44.8942C3.89326 44.6874 3.51263 43.8932 3.60296 43.4821C3.64075 43.3096 4.33735 42.0679 5.15093 40.7227C5.9645 39.3776 8.02056 35.967 9.71991 33.1437C11.4193 30.3203 13.8058 26.3639 15.0232 24.3515C16.2405 22.3391 17.5423 20.1766 17.9161 19.5458C18.2898 18.9151 19.4449 16.9983 20.4829 15.2863C21.5211 13.5743 23.3527 10.5394 24.5533 8.54209C25.7539 6.54479 26.8562 4.79062 27.0028 4.64394C27.2411 4.40562 27.4469 4.31781 27.8785 4.26997C27.9523 4.26178 28.1981 4.3308 28.4246 4.42342ZM26.8642 15.8121C26.2326 16.0304 25.9419 16.2733 25.6678 16.8119C25.4934 17.1545 25.4808 17.452 25.5368 19.9246C25.5928 22.3985 25.6896 24.9874 25.9238 30.2696C25.9943 31.8579 26.0322 32.1224 26.2188 32.3287C26.6011 32.751 27.0469 32.9111 27.8534 32.9157C28.7441 32.9206 29.4438 32.623 29.6949 32.1323C29.8085 31.9104 29.8814 30.8878 29.9769 28.1742C30.0477 26.1618 30.1509 23.6798 30.2062 22.6586C30.3472 20.0524 30.3385 17.1824 30.1885 16.8901C29.6321 15.8051 28.2144 15.3453 26.8642 15.8121ZM27.3927 35.3901C25.4129 35.7737 24.6966 38.4193 26.2021 39.7883C26.7777 40.3116 27.1428 40.4541 27.908 40.4536C28.701 40.4533 29.2865 40.2112 29.7796 39.6796C31.5014 37.8232 29.8794 34.9082 27.3927 35.3901Z" fill="#B80929"/></svg>
+				p Вы подтверждаете запрос на покупку?
+				.buttons
+					button.popup__close_button.button-red-border Нет
+					button.popup__close_button Да
+		.wrapper
+			#breadcrumbs
+				a(href="404.html")
+					<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9036 6.58662L12.6283 5.31131L7.54675 0.224274C7.47565 0.153171 7.39125 0.0967683 7.29835 0.0582872C7.20546 0.0198061 7.10589 0 7.00534 0C6.90479 0 6.80523 0.0198061 6.71233 0.0582872C6.61944 0.0967683 6.53503 0.153171 6.46393 0.224274L1.37472 5.30802L0.0961218 6.58662C0.0381618 6.64882 0.00660792 6.73109 0.00810776 6.8161C0.00960761 6.9011 0.0440441 6.98221 0.104162 7.04233C0.16428 7.10245 0.245386 7.13688 0.330393 7.13838C0.4154 7.13988 0.49767 7.10833 0.559872 7.05037L1.27847 6.33177V13.2344C1.27847 13.4375 1.35913 13.6322 1.50271 13.7758C1.64629 13.9194 1.84103 14.0001 2.04409 14.0001H5.03112C5.23418 14.0001 5.42892 13.9194 5.5725 13.7758C5.71608 13.6322 5.79675 13.4375 5.79675 13.2344V8.85943C5.79675 8.83042 5.80827 8.8026 5.82878 8.78209C5.84929 8.76158 5.87711 8.75006 5.90612 8.75006H8.09362C8.12263 8.75006 8.15045 8.76158 8.17096 8.78209C8.19147 8.8026 8.203 8.83042 8.203 8.85943V13.2344C8.203 13.4375 8.28366 13.6322 8.42724 13.7758C8.57083 13.9194 8.76557 14.0001 8.96862 14.0001H11.9589C12.0595 14.0001 12.159 13.9803 12.2519 13.9418C12.3448 13.9033 12.4292 13.8469 12.5003 13.7758C12.5714 13.7047 12.6278 13.6203 12.6663 13.5274C12.7048 13.4345 12.7246 13.335 12.7246 13.2344V6.33505L13.4399 7.05037C13.5021 7.10833 13.5843 7.13988 13.6694 7.13838C13.7544 7.13688 13.8355 7.10245 13.8956 7.04233C13.9557 6.98221 13.9901 6.9011 13.9916 6.8161C13.9931 6.73109 13.9616 6.64882 13.9036 6.58662ZM12.0683 13.2344C12.0683 13.2634 12.0568 13.2913 12.0363 13.3118C12.0158 13.3323 11.9879 13.3438 11.9589 13.3438H8.96862C8.93961 13.3438 8.91179 13.3323 8.89128 13.3118C8.87077 13.2913 8.85925 13.2634 8.85925 13.2344V8.85943C8.85925 8.65637 8.77858 8.46163 8.635 8.31805C8.49142 8.17447 8.29668 8.09381 8.09362 8.09381H5.90612C5.70307 8.09381 5.50833 8.17447 5.36474 8.31805C5.22116 8.46163 5.1405 8.65637 5.1405 8.85943V13.2344C5.1405 13.2634 5.12897 13.2913 5.10846 13.3118C5.08795 13.3323 5.06013 13.3438 5.03112 13.3438H2.04409C2.01508 13.3438 1.98726 13.3323 1.96675 13.3118C1.94624 13.2913 1.93472 13.2634 1.93472 13.2344V5.67662L6.92222 0.688024C6.94271 0.667653 6.97043 0.656219 6.99932 0.656219C7.02822 0.656219 7.05594 0.667653 7.07643 0.688024L12.0672 5.6788L12.0683 13.2344Z" fill="#767998"/></svg>
+				span Продукты
+			.pages-seller__top.block-shadow
+				.select-v2
+					.select__head
+						span Все статусы
+					.select__body
+						span Все продукты
+						span В наличии
+						span Нет в наличии
+						span Остановлен
+				form(action="#").pages-seller__search
+					input(placeholder="Поиск")
+					button(type="submit") Применить
+				.found Найдено 132
+				.available Доступно сделок: 50 из 250 
+				button.add-product Добавить продукт (5/5)
+			section.block-shadow
+				nav.block__nav
+					ul
+						li.li_active
+							a(href="requests.html") Все продукты
+						li
+							a(href="requests-new.html") Активные
+						li
+							a(href="404.html") Остановленные
+				.table-ovf
+					table
+						thead
+							tr
+								td ID
+								td Продукт
+								td Статус
+								td Тип
+								td Цена/Кешбэк
+								td Ставка
+								td Дата старта/окончания
+								td Количество
+								td Запросы
+								td Заказы
+								td Действия
+						tbody
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_none Нет в наличии
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#" data-popup="stop-company").td__button.td__button_stop
+										img(src="img/svg/pr-ico-3.svg" alt="Ico")
+										span Остановить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_has В наличии
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#" data-popup="stop-company").td__button.td__button_stop
+										img(src="img/svg/pr-ico-3.svg" alt="Ico")
+										span Остановить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_stoped Остановлен
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#").td__button.td__button_start
+										img(src="img/svg/pr-ico-4.svg" alt="Ico")
+										span Возобновить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_none Нет в наличии
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#" data-popup="stop-company").td__button.td__button_stop
+										img(src="img/svg/pr-ico-3.svg" alt="Ico")
+										span Остановить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_has В наличии
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#" data-popup="stop-company").td__button.td__button_stop
+										img(src="img/svg/pr-ico-3.svg" alt="Ico")
+										span Остановить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_stoped Остановлен
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#").td__button.td__button_start
+										img(src="img/svg/pr-ico-4.svg" alt="Ico")
+										span Возобновить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_none Нет в наличии
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#" data-popup="stop-company").td__button.td__button_stop
+										img(src="img/svg/pr-ico-3.svg" alt="Ico")
+										span Остановить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_has В наличии
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#" data-popup="stop-company").td__button.td__button_stop
+										img(src="img/svg/pr-ico-3.svg" alt="Ico")
+										span Остановить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_stoped Остановлен
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#").td__button.td__button_start
+										img(src="img/svg/pr-ico-4.svg" alt="Ico")
+										span Возобновить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_none Нет в наличии
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#" data-popup="stop-company").td__button.td__button_stop
+										img(src="img/svg/pr-ico-3.svg" alt="Ico")
+										span Остановить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_has В наличии
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#" data-popup="stop-company").td__button.td__button_stop
+										img(src="img/svg/pr-ico-3.svg" alt="Ico")
+										span Остановить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_stoped Остановлен
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#").td__button.td__button_start
+										img(src="img/svg/pr-ico-4.svg" alt="Ico")
+										span Возобновить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_none Нет в наличии
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#" data-popup="stop-company").td__button.td__button_stop
+										img(src="img/svg/pr-ico-3.svg" alt="Ico")
+										span Остановить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_has В наличии
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#" data-popup="stop-company").td__button.td__button_stop
+										img(src="img/svg/pr-ico-3.svg" alt="Ico")
+										span Остановить
+							tr
+								td
+									p 23
+								td
+									.td__sides
+										.td__photo
+											img(src="img/order1.jpg" alt="Photo")
+											.photo-name Фотография у которой есть название
+										.td__info
+											img(src="img/svg/flag-ru.svg" alt="Flag")
+											span Бренд:
+											span ZORIA ZORIA 
+								td
+									.td__status.td__status_stoped Остановлен
+								td
+									p Кешбэк после отзыва
+								td
+									p ₽250,00/<br />₽232,50
+								td
+									p 93%
+								td
+									p 29.08.2021 17:00 - 13.11.2021 06:44
+								td
+									p 2355
+								td
+									p 3
+									a(href="#") Показать
+								td
+									p 94
+									a(href="#") Показать
+								td
+									a(href="products-change.html").td__button.td__button_change
+										img(src="img/svg/pr-ico-1.svg" alt="Ico")
+										span Изменить
+									a(href="#").td__button.td__button_show
+										img(src="img/svg/pr-ico-2.svg" alt="Ico")
+										span Показать
+									a(href="#").td__button.td__button_start
+										img(src="img/svg/pr-ico-4.svg" alt="Ico")
+										span Возобновить
+
+
+
+
+
+
+								
+
+
+			
+			
+			
+
+
+	include includes/footer-seller.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
