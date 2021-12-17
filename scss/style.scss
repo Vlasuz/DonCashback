@@ -506,6 +506,8 @@ ul{
 	border-bottom: 1px solid #E5E5E5;
 	margin-bottom: 20px;
 	padding-bottom: 16px;
+	position: relative;
+	z-index: 2;
 	.slider__arr{
 		cursor: pointer;
 		position: relative;
@@ -1562,13 +1564,15 @@ footer{
 		}
 		label{
 			font-size: 14px;
-			line-height: 16px;
+			line-height: 24px;
 			margin-bottom: 0;
 			color: #222220;
 			cursor: pointer;
-			display: flex;
+			// display: flex;
 			align-items: center;
 			flex-wrap: wrap;
+			position: relative;
+			padding-left: 30px;
 			&:before{
 				content: '';
 				margin-right: 4px;
@@ -1579,6 +1583,9 @@ footer{
 				border: 1px solid #495FEA;
 				border-radius: 5px;
 				display: block;
+				position: absolute;
+				top: 2px;
+				left: 0;
 			}
 		}
 		input:checked + label:before{
@@ -1618,7 +1625,7 @@ footer{
 			a{
 				color: #495FEA;
 				margin: 2px 4px;
-				display: flex;
+				// display: flex;
 			}
 		}
 	}
@@ -1796,7 +1803,7 @@ footer{
 }
 
 .table-ovf{
-	overflow: auto;
+	// overflow: auto;
 	position: relative;
 }
 
@@ -8198,6 +8205,7 @@ input{
 			// align-items: flex-end;
 			span{
 				font-weight: 900;
+				margin-top: 2px;
 				font-size: 18px;
 				line-height: 21px;
 				color: #767998;
@@ -8208,6 +8216,7 @@ input{
 				font-weight: 900;
 				font-size: 22px;
 				line-height: 26px;
+				margin-top: 0;
 				color: #222220;
 				margin-right: 6px;
 				&_green{
@@ -8412,8 +8421,8 @@ input{
 			td:nth-child(4),
 			td:nth-child(6){
 				.select__body{
-					bottom: 100%;
-					top: auto
+					// bottom: 100%;
+					// top: auto
 				}
 			}
 		}

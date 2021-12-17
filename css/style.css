@@ -710,7 +710,9 @@ ul {
   align-items: flex-end;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 20px;
-  padding-bottom: 16px
+  padding-bottom: 16px;
+  position: relative;
+  z-index: 2
 }
 .title-h2 .slider__arr {
   cursor: pointer;
@@ -1887,18 +1889,17 @@ footer {
 }
 .popup .remember label {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
   margin-bottom: 0;
   color: #222220;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  position: relative;
+  padding-left: 30px
 }
 .popup .remember label:before {
   content: '';
@@ -1909,7 +1910,10 @@ footer {
   height: 20px;
   border: 1px solid #495fea;
   border-radius: 5px;
-  display: block
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0
 }
 .popup .remember input:checked + label:before {
   background: #fff url(../img/svg/check1.svg) no-repeat;
@@ -1948,10 +1952,7 @@ footer {
 }
 .popup-register .remember a {
   color: #495fea;
-  margin: 2px 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex
+  margin: 2px 4px
 }
 .popup-login button[type=submit],
 .popup-register button[type=submit] {
@@ -2146,7 +2147,6 @@ footer {
   color: #fff
 }
 .table-ovf {
-  overflow: auto;
   position: relative
 }
 table {
@@ -9180,6 +9180,7 @@ textarea {
 }
 .page-plans__item .item__price span {
   font-weight: 900;
+  margin-top: 2px;
   font-size: 18px;
   line-height: 21px;
   color: #767998;
@@ -9190,6 +9191,7 @@ textarea {
   font-weight: 900;
   font-size: 22px;
   line-height: 26px;
+  margin-top: 0;
   color: #222220;
   margin-right: 6px
 }
@@ -9390,11 +9392,6 @@ textarea {
   text-align: center;
   text-transform: capitalize;
   color: #222220
-}
-.page-advertising__slots tr:last-child td:nth-child(4) .select__body,
-.page-advertising__slots tr:last-child td:nth-child(6) .select__body {
-  bottom: 100%;
-  top: auto
 }
 .page-advertising__slots table thead td {
   padding-top: 8px;
@@ -9930,6 +9927,14 @@ textarea {
 @media screen and (max-width:1440px) {
   .header__menu {
     display: none
+  }
+  .table-ovf {
+    overflow: auto
+  }
+  .page-advertising__slots tr:last-child td:nth-child(4) .select__body,
+  .page-advertising__slots tr:last-child td:nth-child(6) .select__body {
+    bottom: 100%;
+    top: auto
   }
   .header__menu_seller {
     display: none
