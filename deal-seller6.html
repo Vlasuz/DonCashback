@@ -1,404 +1,505 @@
-<main class="page-deal page-deal-seller">
-  <div class="popup popup-info-getting-product">
-    <div class="popup__bgd"></div>
-    <div class="popup__content">
-      <div class="popup__close">
-        <img src="img/svg/ico47.svg" alt="Ico" />
-      </div>
-      <h2>Информация о получении товара</h2>
-      <div class="popup-info-product__input">
-        <p>ID Заказа:</p>
-        <input type="text" placeholder="315315" /><span>08.12.2021 02:00</span>
-      </div>
-      <p>Скриншот о получении товара:</p>
-      <label class="file-popup" for="filePopup">
-        <img src="img/screen.jpg" alt="Photo" />
-      </label>
-    </div>
-  </div>
-  <div class="popup popup-good-cancel">
-    <div class="popup__bgd"></div>
-    <div class="popup__content">
-      <div class="popup__close">
-        <img src="img/svg/ico50.svg" alt="Ico" />
-      </div>
-      <div class="popup__status-svg">
-        <img src="img/svg/ico56.svg" alt="Ico" />
-      </div>
-      <p>Вы отклонили запрос покупателя</p>
-      <button class="popup__close_button">Свернуть окно</button>
-    </div>
-  </div>
-  <div class="popup popup-cancel-request">
-    <div class="popup__bgd"></div>
-    <div class="popup__content">
-      <div class="popup__close">
-        <img src="img/svg/ico50.svg" alt="Ico" />
-      </div>
-      <div class="popup__status-svg">
-        <img src="img/svg/ico57.svg" alt="Ico" />
-      </div>
-      <p>Вы уверены, что хотите отклонить запрос покупателя?</p>
-      <div class="buttons">
-        <button class="popup__close_button button-red-border">Нет</button>
-        <button data-popup="good-cancel">Да</button>
-      </div>
-    </div>
-  </div>
-  <div class="popup popup-success-buy-q">
-    <div class="popup__bgd"></div>
-    <div class="popup__content">
-      <div class="popup__close">
-        <img src="img/svg/ico50.svg" alt="Ico" />
-      </div>
-      <div class="popup__status-svg">
-        <img src="img/svg/ico57.svg" alt="Ico" />
-      </div>
-      <p>Вы подтверждаете запрос на покупку?</p>
-      <div class="buttons">
-        <button class="popup__close_button button-red-border">Нет</button>
-        <button data-popup="success-successful">Да</button>
-      </div>
-    </div>
-  </div>
-  <div class="popup popup-success-successful">
-    <div class="popup__bgd"></div>
-    <div class="popup__content">
-      <div class="popup__close">
-        <img src="img/svg/ico50.svg" alt="Ico" />
-      </div>
-      <div class="popup__status-svg">
-        <img src="img/svg/ico56.svg" alt="Ico" />
-      </div>
-      <p>Запрос успешно подтвержден</p>
-      <button class="popup__close_button">Свернуть окно</button>
-    </div>
-  </div>
-  <div class="popup popup-success-complaint">
-    <div class="popup__bgd"></div>
-    <div class="popup__content">
-      <div class="popup__close">
-        <img src="img/svg/ico50.svg" alt="Ico" />
-      </div>
-      <div class="popup__status-svg">
-        <img src="img/svg/ico56.svg" alt="Ico" />
-      </div>
-      <p>Жалоба отправлена</p>
-      <button class="popup__close_button">Свернуть окно</button>
-    </div>
-  </div>
-  <div class="popup popup-complaint">
-    <div class="popup__bgd"></div>
-    <div class="popup__content">
-      <div class="popup__close">
-        <img src="img/svg/ico50.svg" alt="Ico" />
-      </div>
-      <h2>Сообщить о покупателе</h2>
-      <div class="order-num"><b>ID сделки:</b><span>72</span>
-      </div>
-      <label>
-        <p>Причина:</p>
-        <div class="radios">
-          <input type="radio" name="rdInpName" id="rdInp1-1" />
-          <label for="rdInp1-1">Поддельный заказ</label>
-          <input type="radio" name="rdInpName" id="rdInp1-2" />
-          <label for="rdInp1-2">Злонамеренный возврат</label>
-          <input type="radio" name="rdInpName" id="rdInp1-3" />
-          <label for="rdInp1-3">Другое</label>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Site was developed by Vlas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Description of website">
+  <meta name="keywords" content="Website">
+  <!-- Roboto FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+  <!-- Abhaya FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <!-- Abhaya FONT -->
+  <link href="fonts/helvetica/stylesheet.css">
+  <!-- Slick SLIDER -->
+  <link rel="stylesheet" href="css/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/slick/slick.css">
+  <!-- Slick SLIDER -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header header-singin-seller">
+    <div class="wrapper">
+      <div class="header__top">
+        <a class="header__logo" href="index.html">
+          <img src="img/logo.png" alt="Logo" width="182">
+        </a>
+        <nav class="header__menu_seller">
+          <ul>
+            <li class="li_active"><a href="404.html">Запросы</a>
+              <div class="num zero">0</div>
+            </li>
+            <li><a href="404.html">Продукты</a>
+            </li>
+            <li><a href="404.html">Заказы</a>
+            </li>
+            <li><a href="404.html">Уведомления</a>
+              <div class="num">2</div>
+            </li>
+            <li><a href="404.html">Оплата</a>
+            </li>
+            <li><a href="404.html">Депозит</a>
+            </li>
+            <li><a href="404.html">Реклама</a>
+            </li>
+            <li><a href="404.html">Партнерство</a>
+            </li>
+            <li><a href="404.html">Настройки</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__exit" href="404.html">
+          <img src="img/svg/ico18.svg"><span>Выход</span>
+        </a>
+        <div class="header__burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-        <textarea placeholder="Описание"></textarea>
-      </label>
-      <div class="p-label">Загрузить скриншот или другие доказательства:</div>
-      <input type="file" id="flPop1" />
-      <label class="load-file" for="flPop1"><span>Изображение скриншота заказа (не менее 3Мб)</span>
-        <div class="plus">+</div><b>Загрузить</b>
-      </label>
-      <div class="file-load"></div>
-      <div class="buttons">
-        <button class="popup__close_button button-red-border">Нет</button>
-        <button data-popup="success-complaint">Да</button>
       </div>
-    </div>
-  </div>
-  <div class="popup popup-cashback-without-review">
-    <div class="popup__bgd"></div>
-    <div class="popup__content">
-      <div class="popup__close">
-        <img src="img/svg/ico50.svg" alt="Ico" />
-      </div>
-      <h2>Кешбэк без отзыва</h2>
-      <div class="popup__status-svg">
-        <img src="img/svg/ico58.svg" alt="Ico" />
-      </div>
-      <p>Вы уверенны, что хотите вернуть денежные средства по сделке покупателю и Вам не нужен отзыв?</p>
-      <div class="buttons">
-        <button class="popup__close_button button-red-border">Нет</button>
-        <button data-popup="cashback-back">Да</button>
-      </div>
-    </div>
-  </div>
-  <div class="popup popup-cashback-back">
-    <div class="popup__bgd"></div>
-    <div class="popup__content">
-      <div class="popup__close">
-        <img src="img/svg/ico50.svg" alt="Ico" />
-      </div>
-      <h2>Возврат кешбэка</h2>
-      <p>Возврат средств (кешбэк) производится Продавцом напрямую Покупателю по реквизитам указанным ниже.
-        <br />
-        <br />Обязательно прикрепите скриншот перевода денежных средств.
-        <br />После этого денежные средства на депозите по этой сделке «разморозятся» и будут доступны для вывода.</p>
-      <div class="order-num"><b>Заказ на Маркетплейсе:</b><span>01936976-0022</span>
-      </div>
-      <ul class="payment-method">
-        <li class="li_active">Сбербанк</li>
-        <li>QIWI</li>
-        <li>Тинькофф</li>
-        <li>Другой банк</li>
-      </ul>
-      <div class="inputs">
-        <input value="1111 2222 3333 4444" type="num" disabled="disabled" />
-        <input value="Иванов Иван Константинович" type="text" disabled="disabled" />
-      </div>
-      <label>
-        <p>Общая сумма возврата:</p>
-        <div class="input">
-          <div class="lft">₽</div>
-          <input type="num" placeholder="1111" />
+      <div class="header__mob">
+        <div class="header__persone">
+          <div class="persone__top">
+            <img src="img/svg/ico86.svg" alt="Ico"><span>Happy Shopper</span>
+            <a class="header__exit" href="404.html">
+              <img src="img/svg/ico18.svg"><span>Выход</span>
+            </a>
+          </div>
         </div>
-      </label>
-      <label>
-        <p>Сообщение покупателю:</p>
-        <input type="text" placeholder="Введите сообщение " />
-      </label>
-      <p class="p-label">Загрузить скриншот или другие доказательства:</p>
-      <input type="file" id="flPop1-1" />
-      <label class="load-file" for="flPop1-1"><span>Изображение скриншота заказа (не менее 3Мб)</span>
-        <div class="plus">+</div><b>Загрузить</b>
-      </label>
-      <div class="file-load"></div>
-      <div class="buttons">
-        <button class="popup__close_button button-red-border">Нет</button>
-        <button class="popup__close_button">Да</button>
+        <nav class="header__menu_seller">
+          <ul>
+            <li class="li_active"><a href="404.html">Запросы</a>
+              <div class="num zero">0</div>
+            </li>
+            <li><a href="404.html">Продукты</a>
+            </li>
+            <li><a href="404.html">Заказы</a>
+            </li>
+            <li><a href="404.html">Уведомления</a>
+              <div class="num">2</div>
+            </li>
+            <li><a href="404.html">Оплата</a>
+            </li>
+            <li><a href="404.html">Депозит</a>
+            </li>
+            <li><a href="404.html">Реклама</a>
+            </li>
+            <li><a href="404.html">Партнерство</a>
+            </li>
+            <li><a href="404.html">Настройки</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
-  </div>
-  <div class="wrapper">
-    <div id="breadcrumbs">
-      <a href="404.html">
-        <img src="img/svg/ico22.svg" alt="ico" />
-      </a><a href="#">Мои ДонКешбэк</a><a href="#">Мои заказы</a><span>Кешбэк сделки</span>
+  </header>
+  <main class="page-deal page-deal-seller">
+    <div class="popup popup-info-getting-product">
+      <div class="popup__bgd"></div>
+      <div class="popup__content">
+        <div class="popup__close">
+          <img src="img/svg/ico47.svg" alt="Ico">
+        </div>
+        <h2>Информация о получении товара</h2>
+        <div class="popup-info-product__input">
+          <p>ID Заказа:</p>
+          <input type="text" placeholder="315315"><span>08.12.2021 02:00</span>
+        </div>
+        <p>Скриншот о получении товара:</p>
+        <label class="file-popup" for="filePopup">
+          <img src="img/screen.jpg" alt="Photo">
+        </label>
+      </div>
     </div>
-    <div class="page-deal__top">
-      <ol>
-        <li class="li_done">
-          <div class="num">
-            <div class="ico__checking">
-              <img src="img/svg/ico53.svg" alt="Ico" />
-            </div>
-            <div class="ico__done">
-              <img src="img/svg/ico54.svg" alt="Ico" />
-            </div>
-          </div>
-          <p>Покупатель отправляет запрос</p>
-        </li>
-        <li class="li_done">
-          <div class="num">
-            <div class="ico__checking">
-              <img src="img/svg/ico53.svg" alt="Ico" />
-            </div>
-            <div class="ico__done">
-              <img src="img/svg/ico54.svg" alt="Ico" />
-            </div>
-          </div>
-          <p>Продавец подтверждает запрос</p>
-        </li>
-        <li class="li_done">
-          <div class="num">
-            <div class="ico__checking">
-              <img src="img/svg/ico53.svg" alt="Ico" />
-            </div>
-            <div class="ico__done">
-              <img src="img/svg/ico54.svg" alt="Ico" />
-            </div>
-          </div>
-          <p>Покупатель
-            <br />совершает покупку</p>
-        </li>
-        <li class="li_done">
-          <div class="num">
-            <div class="ico__checking">
-              <img src="img/svg/ico53.svg" alt="Ico" />
-            </div>
-            <div class="ico__done">
-              <img src="img/svg/ico54.svg" alt="Ico" />
-            </div>
-          </div>
-          <p>Покупатель отправляет отзыв</p>
-        </li>
-        <li class="li_done li_current">
-          <div class="num">
-            <div class="ico__checking">
-              <img src="img/svg/ico53.svg" alt="Ico" />
-            </div>
-            <div class="ico__done">
-              <img src="img/svg/ico54.svg" alt="Ico" />
-            </div>
-          </div>
-          <p>Продавец
-            <br />возвращает кешбэк</p>
-        </li>
-      </ol>
-      <button class="view-more">Посмотреть все шаги</button>
+    <div class="popup popup-good-cancel">
+      <div class="popup__bgd"></div>
+      <div class="popup__content">
+        <div class="popup__close">
+          <img src="img/svg/ico50.svg" alt="Ico">
+        </div>
+        <div class="popup__status-svg">
+          <img src="img/svg/ico56.svg" alt="Ico">
+        </div>
+        <p>Вы отклонили запрос покупателя</p>
+        <button class="popup__close_button">Свернуть окно</button>
+      </div>
     </div>
-    <div class="page-deal__switch">
-      <input type="radio" checked="checked" name="switchDeal" id="swId1" />
-      <label class="switch__item li_current" for="swId1">чат сделки</label>
-      <input type="radio" name="switchDeal" id="swId2" />
-      <label class="switch__item" for="swId2">Информация о продукте</label>
+    <div class="popup popup-cancel-request">
+      <div class="popup__bgd"></div>
+      <div class="popup__content">
+        <div class="popup__close">
+          <img src="img/svg/ico50.svg" alt="Ico">
+        </div>
+        <div class="popup__status-svg">
+          <img src="img/svg/ico57.svg" alt="Ico">
+        </div>
+        <p>Вы уверены, что хотите отклонить запрос покупателя?</p>
+        <div class="buttons">
+          <button class="popup__close_button button-red-border">Нет</button>
+          <button data-popup="good-cancel">Да</button>
+        </div>
+      </div>
     </div>
-    <div class="page-deal__bottom">
-      <div class="page-deal__item">
-        <h3 class="page-deal__title">Чат сделки</h3>
-        <div class="page-deal__chat">
-          <div class="chat__block">
-            <div class="chat__data">21.10.2021</div>
-            <div class="chat__text chat__text_me">
-              <div class="chat__from">Покупатель:</div>
-              <p>Отправлен новый запрос на покупку. Ожидает подтверждения</p>
-              <div class="chat__time"><span>22:59</span>
-                <div class="read">
-                  <img src="img/svg/ico55.svg" alt="Ico" />
+    <div class="popup popup-success-buy-q">
+      <div class="popup__bgd"></div>
+      <div class="popup__content">
+        <div class="popup__close">
+          <img src="img/svg/ico50.svg" alt="Ico">
+        </div>
+        <div class="popup__status-svg">
+          <img src="img/svg/ico57.svg" alt="Ico">
+        </div>
+        <p>Вы подтверждаете запрос на покупку?</p>
+        <div class="buttons">
+          <button class="popup__close_button button-red-border">Нет</button>
+          <button data-popup="success-successful">Да</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-success-successful">
+      <div class="popup__bgd"></div>
+      <div class="popup__content">
+        <div class="popup__close">
+          <img src="img/svg/ico50.svg" alt="Ico">
+        </div>
+        <div class="popup__status-svg">
+          <img src="img/svg/ico56.svg" alt="Ico">
+        </div>
+        <p>Запрос успешно подтвержден</p>
+        <button class="popup__close_button">Свернуть окно</button>
+      </div>
+    </div>
+    <div class="popup popup-success-complaint">
+      <div class="popup__bgd"></div>
+      <div class="popup__content">
+        <div class="popup__close">
+          <img src="img/svg/ico50.svg" alt="Ico">
+        </div>
+        <div class="popup__status-svg">
+          <img src="img/svg/ico56.svg" alt="Ico">
+        </div>
+        <p>Жалоба отправлена</p>
+        <button class="popup__close_button">Свернуть окно</button>
+      </div>
+    </div>
+    <div class="popup popup-complaint">
+      <div class="popup__bgd"></div>
+      <div class="popup__content">
+        <div class="popup__close">
+          <img src="img/svg/ico50.svg" alt="Ico">
+        </div>
+        <h2>Сообщить о покупателе</h2>
+        <div class="order-num"><b>ID сделки:</b><span>72</span>
+        </div>
+        <label>
+          <p>Причина:</p>
+          <div class="radios">
+            <input type="radio" name="rdInpName" id="rdInp1-1">
+            <label for="rdInp1-1">Поддельный заказ</label>
+            <input type="radio" name="rdInpName" id="rdInp1-2">
+            <label for="rdInp1-2">Злонамеренный возврат</label>
+            <input type="radio" name="rdInpName" id="rdInp1-3">
+            <label for="rdInp1-3">Другое</label>
+          </div>
+          <textarea placeholder="Описание"></textarea>
+        </label>
+        <div class="p-label">Загрузить скриншот или другие доказательства:</div>
+        <input type="file" id="flPop1">
+        <label class="load-file" for="flPop1"><span>Изображение скриншота заказа (не менее 3Мб)</span>
+          <div class="plus">+</div><b>Загрузить</b>
+        </label>
+        <div class="file-load"></div>
+        <div class="buttons">
+          <button class="popup__close_button button-red-border">Нет</button>
+          <button data-popup="success-complaint">Да</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-cashback-without-review">
+      <div class="popup__bgd"></div>
+      <div class="popup__content">
+        <div class="popup__close">
+          <img src="img/svg/ico50.svg" alt="Ico">
+        </div>
+        <h2>Кешбэк без отзыва</h2>
+        <div class="popup__status-svg">
+          <img src="img/svg/ico58.svg" alt="Ico">
+        </div>
+        <p>Вы уверенны, что хотите вернуть денежные средства по сделке покупателю и Вам не нужен отзыв?</p>
+        <div class="buttons">
+          <button class="popup__close_button button-red-border">Нет</button>
+          <button data-popup="cashback-back">Да</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-cashback-back">
+      <div class="popup__bgd"></div>
+      <div class="popup__content">
+        <div class="popup__close">
+          <img src="img/svg/ico50.svg" alt="Ico">
+        </div>
+        <h2>Возврат кешбэка</h2>
+        <p>Возврат средств (кешбэк) производится Продавцом напрямую Покупателю по реквизитам указанным ниже.
+          <br />
+          <br />Обязательно прикрепите скриншот перевода денежных средств.
+          <br />После этого денежные средства на депозите по этой сделке «разморозятся» и будут доступны для вывода.</p>
+        <div class="order-num"><b>Заказ на Маркетплейсе:</b><span>01936976-0022</span>
+        </div>
+        <ul class="payment-method">
+          <li class="li_active">Сбербанк</li>
+          <li>QIWI</li>
+          <li>Тинькофф</li>
+          <li>Другой банк</li>
+        </ul>
+        <div class="inputs">
+          <input value="1111 2222 3333 4444" type="num" disabled>
+          <input value="Иванов Иван Константинович" type="text" disabled>
+        </div>
+        <label>
+          <p>Общая сумма возврата:</p>
+          <div class="input">
+            <div class="lft">₽</div>
+            <input type="num" placeholder="1111">
+          </div>
+        </label>
+        <label>
+          <p>Сообщение покупателю:</p>
+          <input type="text" placeholder="Введите сообщение ">
+        </label>
+        <p class="p-label">Загрузить скриншот или другие доказательства:</p>
+        <input type="file" id="flPop1-1">
+        <label class="load-file" for="flPop1-1"><span>Изображение скриншота заказа (не менее 3Мб)</span>
+          <div class="plus">+</div><b>Загрузить</b>
+        </label>
+        <div class="file-load"></div>
+        <div class="buttons">
+          <button class="popup__close_button button-red-border">Нет</button>
+          <button class="popup__close_button">Да</button>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="breadcrumbs">
+        <a href="404.html">
+          <img src="img/svg/ico22.svg" alt="ico">
+        </a><a href="#">Мои ДонКешбэк</a><a href="#">Мои заказы</a><span>Кешбэк сделки</span>
+      </div>
+      <div class="page-deal__top">
+        <ol>
+          <li class="li_done">
+            <div class="num">
+              <div class="ico__checking">
+                <img src="img/svg/ico53.svg" alt="Ico">
+              </div>
+              <div class="ico__done">
+                <img src="img/svg/ico54.svg" alt="Ico">
+              </div>
+            </div>
+            <p>Покупатель отправляет запрос</p>
+          </li>
+          <li class="li_done">
+            <div class="num">
+              <div class="ico__checking">
+                <img src="img/svg/ico53.svg" alt="Ico">
+              </div>
+              <div class="ico__done">
+                <img src="img/svg/ico54.svg" alt="Ico">
+              </div>
+            </div>
+            <p>Продавец подтверждает запрос</p>
+          </li>
+          <li class="li_done">
+            <div class="num">
+              <div class="ico__checking">
+                <img src="img/svg/ico53.svg" alt="Ico">
+              </div>
+              <div class="ico__done">
+                <img src="img/svg/ico54.svg" alt="Ico">
+              </div>
+            </div>
+            <p>Покупатель
+              <br />совершает покупку</p>
+          </li>
+          <li class="li_done">
+            <div class="num">
+              <div class="ico__checking">
+                <img src="img/svg/ico53.svg" alt="Ico">
+              </div>
+              <div class="ico__done">
+                <img src="img/svg/ico54.svg" alt="Ico">
+              </div>
+            </div>
+            <p>Покупатель отправляет отзыв</p>
+          </li>
+          <li class="li_done li_current">
+            <div class="num">
+              <div class="ico__checking">
+                <img src="img/svg/ico53.svg" alt="Ico">
+              </div>
+              <div class="ico__done">
+                <img src="img/svg/ico54.svg" alt="Ico">
+              </div>
+            </div>
+            <p>Продавец
+              <br />возвращает кешбэк</p>
+          </li>
+        </ol>
+        <button class="view-more">Посмотреть все шаги</button>
+      </div>
+      <div class="page-deal__switch">
+        <input type="radio" checked name="switchDeal" id="swId1">
+        <label class="switch__item li_current" for="swId1">чат сделки</label>
+        <input type="radio" name="switchDeal" id="swId2">
+        <label class="switch__item" for="swId2">Информация о продукте</label>
+      </div>
+      <div class="page-deal__bottom">
+        <div class="page-deal__item">
+          <h3 class="page-deal__title">Чат сделки</h3>
+          <div class="page-deal__chat">
+            <div class="chat__block">
+              <div class="chat__data">21.10.2021</div>
+              <div class="chat__text chat__text_me">
+                <div class="chat__from">Покупатель:</div>
+                <p>Отправлен новый запрос на покупку. Ожидает подтверждения</p>
+                <div class="chat__time"><span>22:59</span>
+                  <div class="read">
+                    <img src="img/svg/ico55.svg" alt="Ico">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="page-deal__textarea">
+            <textarea placeholder="Ваше сообщение"></textarea>
+            <button>
+              <img src="img/svg/ico35.svg" alt="Ico">
+              <div class="btn-mob">
+                <img src="img/svg/ico34.svg" alt="Ico">
+              </div>
+            </button>
+            <div class="svgs">
+              <input type="file" id="fileSms1">
+              <label class="files" for="fileSms1">
+                <img src="img/svg/ico36.svg" alt="Ico">
+              </label>
+              <div class="smile emoji-button">
+                <img src="img/svg/ico31.svg" alt="Ico">
+              </div>
+              <div class="emoji-block">
+                <div class="smiles-emoji"></div>
+              </div>
+            </div>
+          </div>
+          <div class="loaded-file"></div>
         </div>
-        <div class="page-deal__textarea">
-          <textarea placeholder="Ваше сообщение"></textarea>
-          <button>
-            <img src="img/svg/ico35.svg" alt="Ico" />
-            <div class="btn-mob">
-              <img src="img/svg/ico34.svg" alt="Ico" />
-            </div>
-          </button>
-          <div class="svgs">
-            <input type="file" id="fileSms1" />
-            <label class="files" for="fileSms1">
-              <img src="img/svg/ico36.svg" alt="Ico" />
-            </label>
-            <div class="smile emoji-button">
-              <img src="img/svg/ico31.svg" alt="Ico" />
-            </div>
-            <div class="emoji-block">
-              <div class="smiles-emoji"></div>
+        <input type="hidden">
+        <div class="page-deal__item">
+          <h3 class="page-deal__title">Информация о продукте</h3>
+          <div class="page-deal__info">
+            <div class="info__head"><span>Статус:</span>
+              <p>Ожидает подтверждения продавца</p>
             </div>
           </div>
-        </div>
-        <div class="loaded-file"></div>
-      </div>
-      <input type="hidden" />
-      <div class="page-deal__item">
-        <h3 class="page-deal__title">Информация о продукте</h3>
-        <div class="page-deal__info">
-          <div class="info__head"><span>Статус:</span>
-            <p>Ожидает подтверждения продавца</p>
-          </div>
-        </div>
-        <div class="page-deal__info">
-          <div class="info__head">
-            <div class="info__id"><span>ID Заказа: </span><span>315</span>
-            </div>
-            <div class="info__data"><span>21.10.2021</span><span>22:58</span>
-            </div>
-          </div>
-        </div>
-        <div class="page-deal__product">
-          <div class="product__photo">
-            <img src="img/product-deal.jpg" alt="Photo" />
-          </div>
-          <div class="product__info">
-            <div class="product__top">Наименование товара:</div>
-            <div class="product__name">Кольцо-держатель на палец LGD Magnests для телефона серебро</div>
-            <div class="product__mini-info">
-              <div class="product__saller"><span>Продавец:</span>
-                <p>Бренд</p>
+          <div class="page-deal__info">
+            <div class="info__head">
+              <div class="info__id"><span>ID Заказа: </span><span>315</span>
               </div>
-              <div class="product__saller"><span>Продается на </span>
-                <img src="img/svg/yandex.svg" alt="Ico" />
-              </div>
-            </div>
-            <div class="product__bottom">
-              <div class="bottom__item"><span>Цена</span><b>235 ₽</b>
-              </div>
-              <div class="bottom__item"><span>Кешбэк</span><b>135 ₽</b>
-              </div>
-              <div class="bottom__item"><span>Ставка</span><b>100%</b>
+              <div class="info__data"><span>21.10.2021</span><span>22:58</span>
               </div>
             </div>
           </div>
-        </div>
-        <div class="page-deal__info">
-          <div class="info__head"><span>ID заказа на маркетплейсе:</span>
-            <div class="num">777-46775-577666</div>
-            <button class="show">Показать</button>
-          </div>
-          <div class="info__content">
-            <div class="info__body">
-              <div class="body__lft">
-                <button data-popup="info-getting-product">
-                  <img src="img/info-more1.jpg" alt="Photo" />
-                </button>
+          <div class="page-deal__product">
+            <div class="product__photo">
+              <img src="img/product-deal.jpg" alt="Photo">
+            </div>
+            <div class="product__info">
+              <div class="product__top">Наименование товара:</div>
+              <div class="product__name">Кольцо-держатель на палец LGD Magnests для телефона серебро</div>
+              <div class="product__mini-info">
+                <div class="product__saller"><span>Продавец:</span>
+                  <p>Бренд</p>
+                </div>
+                <div class="product__saller"><span>Продается на </span>
+                  <img src="img/svg/yandex.svg" alt="Ico">
+                </div>
               </div>
-              <div class="body__rht">30.08.2021 17:43</div>
+              <div class="product__bottom">
+                <div class="bottom__item"><span>Цена</span><b>235 ₽</b>
+                </div>
+                <div class="bottom__item"><span>Кешбэк</span><b>135 ₽</b>
+                </div>
+                <div class="bottom__item"><span>Ставка</span><b>100%</b>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="page-deal__info">
-          <div class="info__head"><span>Информация о получении товара:</span>
-            <button class="show">Показать</button>
-          </div>
-          <div class="info__content">
-            <div class="info__body">
-              <div class="body__lft">
-                <button data-popup="info-getting-product">
-                  <img src="img/info-more1.jpg" alt="Photo" />
-                </button>
+          <div class="page-deal__info">
+            <div class="info__head"><span>ID заказа на маркетплейсе:</span>
+              <div class="num">777-46775-577666</div>
+              <button class="show">Показать</button>
+            </div>
+            <div class="info__content">
+              <div class="info__body">
+                <div class="body__lft">
+                  <button data-popup="info-getting-product">
+                    <img src="img/info-more1.jpg" alt="Photo">
+                  </button>
+                </div>
+                <div class="body__rht">30.08.2021 17:43</div>
               </div>
-              <div class="body__rht">30.08.2021 17:43</div>
             </div>
           </div>
-        </div>
-        <div class="page-deal__info">
-          <div class="info__head"><span>Информация об отзыве на маркетплейсе</span>
-            <button class="show">Показать</button>
-          </div>
-          <div class="info__content">
-            <div class="info__body">
-              <div class="body__lft"><a href="#">uploads/16338914385147E8E3B3E-40B9-4838-BEA7-3B23AE30F03A.jpeg</a><span>Скриншот отзыва на маркетплейсе:</span>
-                <button data-popup="info-getting-product">
-                  <img src="img/info-more1.jpg" alt="Photo" />
-                </button>
+          <div class="page-deal__info">
+            <div class="info__head"><span>Информация о получении товара:</span>
+              <button class="show">Показать</button>
+            </div>
+            <div class="info__content">
+              <div class="info__body">
+                <div class="body__lft">
+                  <button data-popup="info-getting-product">
+                    <img src="img/info-more1.jpg" alt="Photo">
+                  </button>
+                </div>
+                <div class="body__rht">30.08.2021 17:43</div>
               </div>
-              <div class="body__rht">30.08.2021 17:43</div>
+            </div>
+          </div>
+          <div class="page-deal__info">
+            <div class="info__head"><span>Информация об отзыве на маркетплейсе</span>
+              <button class="show">Показать</button>
+            </div>
+            <div class="info__content">
+              <div class="info__body">
+                <div class="body__lft"><a href="#">uploads/16338914385147E8E3B3E-40B9-4838-BEA7-3B23AE30F03A.jpeg</a><span>Скриншот отзыва на маркетплейсе:</span>
+                  <button data-popup="info-getting-product">
+                    <img src="img/info-more1.jpg" alt="Photo">
+                  </button>
+                </div>
+                <div class="body__rht">30.08.2021 17:43</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
-<footer class="footer-seller">
-  <div class="wrapper">
-    <div class="footer">
-      <div class="footer__copyright">© 2021 Кешбэк сервис ООО “ДонКешбэк”
-        <br />doncashback.ru</div><a class="footer__link" href="#">Политика Конфиденциальности</a><a class="footer__link" href="#">Связаться с Нами</a><a class="footer__telegram" href="#"><span>Присоединяйтесь в наш телеграмм чат <br />(в чате присутствует поддержка)</span><img src="img/tg.png" alt="Telegram"/></a>
+  </main>
+  <footer class="footer-seller">
+    <div class="wrapper">
+      <div class="footer">
+        <div class="footer__copyright">© 2021 Кешбэк сервис ООО “ДонКешбэк”
+          <br />doncashback.ru</div><a class="footer__link" href="#">Политика Конфиденциальности</a><a class="footer__link" href="#">Связаться с Нами</a><a class="footer__telegram" href="#"><span>Присоединяйтесь в наш телеграмм чат <br />(в чате присутствует поддержка)</span><img src="img/tg.png" alt="Telegram"></a>
+      </div>
     </div>
-  </div>
-</footer>
-<!-- jQuery JS -->
-<script src="js/jQuery.js"></script>
-<!-- slick JS -->
-<script src="js/slick.min.js"></script>
-<!-- main JS -->
-<script src="js/main.js"></script>
+  </footer>
+  <!-- jQuery JS -->
+  <script src="js/jQuery.js"></script>
+  <!-- slick JS -->
+  <script src="js/slick.min.js"></script>
+  <!-- main JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

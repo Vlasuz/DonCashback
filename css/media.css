@@ -300,7 +300,10 @@
     position: absolute;
     z-index: -1;
     max-width: 0;
-    left: 0
+    height: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
   }
   .page-deal__top ol li.li_done {
     opacity: 0;
@@ -314,7 +317,8 @@
     position: relative;
     z-index: 1;
     margin: 10px;
-    max-width: 100%
+    max-width: 100%;
+    height: 60px
   }
   .page-deal__top ol li.li_current:after {
     display: none
@@ -323,7 +327,8 @@
     opacity: 1;
     position: relative;
     z-index: 1;
-    max-width: 100%
+    max-width: 100%;
+    height: 60px
   }
   .page-deal__top ol li.li_show.li_current {
     margin-bottom: 40px
@@ -1818,24 +1823,22 @@
   .points li:nth-child(3),
   .points li:nth-child(4),
   .points li:nth-child(5) {
-    display: none
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: position .3s ease;
+    -o-transition: position .3s ease;
+    transition: position .3s ease;
+    height: 0
   }
   .points li:nth-child(3).li_show,
   .points li:nth-child(4).li_show,
   .points li:nth-child(5).li_show {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    position: static;
+    height: 113px
   }
   .footer__block-2 {
     display: block

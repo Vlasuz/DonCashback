@@ -12,7 +12,9 @@ $(document).ready(function () {
 		$('.scroll-finger').fadeOut()
 	}, 3000)
 
-	$('.table-ovf').html(`${$('.table-ovf').html()}<div class="scroll-finger"><img src="img/finger.png" alt="Finger"></div>`)
+	$('.table-ovf').each(function () {
+		$(this).html(`${$(this).html()}<div class="scroll-finger"><img src="img/finger.png" alt="Finger"></div>`)
+	})
 
 	$('.item__likes').click(function () {
 		$(this).toggleClass('item__likes_active')
