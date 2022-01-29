@@ -1417,7 +1417,18 @@ footer {
   height: 100%;
   top: 0;
   left: 0;
-  display: none
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  z-index: -1;
+  top: -10000%
 }
 .popup .file-popup {
   margin-bottom: 0
@@ -1757,15 +1768,9 @@ footer {
   align-items: center
 }
 .popup_open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center
+  opacity: 1;
+  z-index: 2;
+  top: 0
 }
 .popup__content {
   background: #fff;

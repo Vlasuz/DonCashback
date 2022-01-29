@@ -150,14 +150,14 @@ $(document).ready(function () {
 		$('.popup').removeClass('popup_open')
 		$(this).parent().parent().find('.popup').addClass('popup_open')
 		let thiis = $(this).parent().parent()
-		$(this).parent().parent().find('.slick-next').click()
+		$(this).parent().parent().find('.slick-current').click()
 		// $('body').addClass('slider-without')
 
 		$(this).parent().parent().parent().parent().addClass('slider-without')
 		$(this).parent().parent().parent().addClass('slider-without')
 
 		setTimeout(function () {
-			thiis.find('.slick-prev').click()
+			// thiis.find('.slick-prev').click()
 		}, 200)
 
 	})
